@@ -6,16 +6,6 @@
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list|photo/info) url script-response-body wb_ad.js
 
 [mitm]
-hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.gotokeep.com,r.inews.qq.com,vsco.co,www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com,api.vc.bilibili.com
+hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.gotokeep.com,r.inews.qq.com,vsco.co
 
 
-
-
-
-[URL Rewrite]
-# 去除动态中的话题
-^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject-dict
-# 去除动态中的最常访问
-^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject-dict
-[Script]
-http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list requires-body=1,script-path=https://raw.githubusercontent.com/fengwcarl/Own-Loon/master/bilibili_plus.js,tag=Bilibili_开屏去广告
