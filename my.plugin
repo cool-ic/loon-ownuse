@@ -8,6 +8,3 @@
 [mitm]
 hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.gotokeep.com,r.inews.qq.com,rtbapi.douyucdn.cn
 
-[Rule]
-URL-REGEX,^https?:\/\/rtbapi.douyucdn.cn\/japi\/sign\/app\/getinfo,REJECT
-
