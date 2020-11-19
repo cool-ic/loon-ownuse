@@ -11,7 +11,11 @@ hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,ap
 
 
 
-[Rule]
-URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
-URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
 
+[URL Rewrite]
+# 去除动态中的话题
+^https?:\/\/api\.vc\.bilibili\.com\/topic_svr\/v1\/topic_svr - reject-dict
+# 去除动态中的最常访问
+^https?:\/\/api\.vc\.bilibili\.com\/dynamic_svr\/v1\/dynamic_svr\/mix_uplist - reject-dict
+[Script]
+http-response ^https?:\/\/app\.bilibili\.com\/x\/v2\/splash\/list requires-body=1,script-path=https://raw.githubusercontent.com/fengwcarl/Own-Loon/master/bilibili_plus.js,tag=Bilibili_开屏去广告
