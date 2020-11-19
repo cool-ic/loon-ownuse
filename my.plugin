@@ -3,4 +3,4 @@
 ^http://.+/amdc/mobileDispatch url script-request-body tb_price.js
 ^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body tb_price.js
 [mitm]
-hostname = trade-acs.m.taobao.com
+hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.gotokeep.com, mp.weixin.qq.com,r.inews.qq.com,api.bilibili.com,vsco.co,weixin110.qq.com
