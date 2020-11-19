@@ -13,3 +13,5 @@ hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,ap
 
 [Rule]
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
+
