@@ -27,6 +27,8 @@
 ^https?:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo - reject
 ^https?:\/\/c\.tieba\.baidu\.com\/\w+\/\w+\/(sync|newRnSync|mlog) - reject
 
+[Rule]
+DOMAIN-SUFFIX,app-measurement.com,DIRECT
 
 [mitm]
 hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.gotokeep.com,r.inews.qq.com,rtbapi.douyucdn.cn,api.zhihu.com,issuecdn.baidupcs.com,pan.baidu.com,newclient.map.baidu.com,mime.baidu.com
