@@ -36,8 +36,4 @@ DOMAIN-SUFFIX,app-measurement.com,DIRECT
 
 [mitm]
 hostname = api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.gotokeep.com,r.inews.qq.com,rtbapi.douyucdn.cn,api.zhihu.com,issuecdn.baidupcs.com,pan.baidu.com,newclient.map.baidu.com,mime.baidu.com
-================Loon==============
 
-[Script]
-
-cron "10-20/10 9 * * *" script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_watch.js,tag=京东看一看
